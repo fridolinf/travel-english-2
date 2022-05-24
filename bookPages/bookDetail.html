@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="bookDetail.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col on-top">
+          <h6 class="text-center mt-3">Your Brand</h6>
+          <h5 class="text-center mt-5">Booking Information</h5>
+          <h4 class="text-center mt-3">Private West Nusa Penida Tour Package</h4>
+          <p class="text-center mt-3">Please fill up the blank fields below and our tour consultant will confirm your book</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-form mt-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 forms">
+            <form>
+              <div class="form-group">
+                <label for="fullname">Fullname</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Fullname">
+              </div>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email"  placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="Phone">Phone or Whatsapp (with country code)</label>
+                <input type="number" class="form-control" id="Phone" placeholder="+62 123 456 789">
+              </div>
+              <div class="form-group">
+                <label for="Date">Tour Date</label>
+                <input type="date" class="form-control" id="Date" placeholder="+62 123 456 789">
+              </div>
+              <div class="form-group">
+                <label for="Participants">Number of Participants <b>(Minimum 2)</b></label>
+                <input type="number" class="form-control" id="Participants" placeholder="1" min="2" >
+              </div>
+              <div class="form-group">
+                <label for="Hotel">Hotel / Accomodation Name</label>
+                <input type="text" class="form-control" id="Hotel">
+              </div>
+              <div class="form-group">
+                <label for="Note">Note</label>
+                <br>
+                <textarea name="note" id="note" cols="71" rows="10"></textarea>
+              </div>
+            </form>
+            <div class="row justify-content-center">
+              <button onclick="location.href='../bookFinishPage/finishDetail.html'" class="btn-book mt-5">BOOKING NOW</button>
+            </div>
+              <p class="cancel text-center mt-5">CANCEL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5">
+      <div class="row" style="width: 400px">
+        <img class="footer-img-1 mr-4" src="../assets/mastercard.svg" alt="" />
+        <img class="footer-img-1 mr-4" src="../assets/visa.svg" alt="" />
+        <img class="footer-img-1" src="../assets/jcb.svg" alt="" />
+      </div>
+      <p>
+        Copyright 2021. All Rights Reserved.
+        <br />
+        Jl. Lorem Ipsum 201, Seminyak, Bali000
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

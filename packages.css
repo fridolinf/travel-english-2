@@ -1,0 +1,34 @@
+.img-first {
+  width: 100%;
+  height: 357px;
+  z-index: -100;
+  position: absolute;
+}
+
+.packages-sect-5 {
+  margin-top: 300px;
+}
+
+.text-1-s1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 1000;
+  top: 96px;
+  left: 222px;
+  text-align: center;
+}
+.text-2-s1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  position: absolute;
+  top: 166px;
+  z-index: 1000;
+  left: 295px;
+  width: 881px;
+  text-align: center;
+  color: #ffffff;
+}

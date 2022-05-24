@@ -1,0 +1,35 @@
+.finish > h6 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0c145a;
+}
+.finish > h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #152c5b;
+}
+.finish > div > img {
+  opacity: 0.2;
+  justify-content: center;
+}
+
+.finish > p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #969696;
+  width: 661px;
+  margin: 0 auto;
+}
+
+.btn-book {
+  width: 320px;
+  height: 50px;
+  color: #ffff;
+  background: #faa61a;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(50, 82, 223, 0.3);
+  border-radius: 100px;
+}
