@@ -6,6 +6,17 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(./assets/calendar.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
 header {
   background: #ffefd5;
   height: 58px;
@@ -14,6 +25,65 @@ header {
   font-size: 14px;
   line-height: 21px;
   color: #343434;
+}
+
+.deletes {
+  display: none;
+}
+
+.mouse-indicator {
+  position: absolute;
+  z-index: 1000;
+  margin-left: 39vw;
+  margin-top: 15vw;
+  cursor: pointer;
+}
+
+.mouse-indicator-2 {
+  position: absolute;
+  z-index: 1000;
+  margin-top: 2vw;
+  margin-left: 50vw;
+  cursor: pointer;
+}
+
+.mouse-indicator-3 {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  margin-top: 50vw;
+}
+.mouse-indicator-4 {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  margin-left: 50vw;
+  margin-top: 1vw;
+}
+.mouse-indicator-6 {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  margin-left: 50vw;
+  margin-top: 1vw;
+  transform: rotate(180deg);
+}
+.nav-item .active {
+  color: #f49e1f !important;
+  border-bottom: 2px solid #f49e1f;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-not-active {
+  display: none;
+}
+
+.slider-active {
+  display: block;
 }
 
 .plane-icon {
@@ -38,7 +108,7 @@ header {
 
 .img-first {
   width: 100%;
-  height: 101%;
+  height: 70%;
   z-index: -100;
   position: absolute;
 }
@@ -138,13 +208,20 @@ header {
 .border-none:hover p {
   color: #ffff;
 }
-.border-none:hover .img-card-s3 {
+.border-none:hover .ic-card-s3 {
   background: #ffff;
 }
 
 .img-card-s3 {
   width: 80px;
   height: 80px;
+  border-radius: 50px;
+  background: rgba(12, 20, 90, 0.11);
+}
+
+.ic-card-s3 {
+  font-size: 50px;
+  padding: 20px 20px 10px 20px;
   border-radius: 50px;
   background: rgba(12, 20, 90, 0.11);
 }
@@ -390,15 +467,20 @@ header {
 .text-2-s7 {
   font-weight: 600;
   font-size: 32px;
-  color: #0c145a;
+  color: #343434;
 }
 .card-s7 {
   width: 270px;
   height: 281px;
+  border: none;
+}
+
+.card-s7:hover {
   box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
   border-radius: 14px;
   border: 2px solid rgba(243, 243, 243, 0.5);
 }
+
 .img-card-s7 {
   width: 142px;
   height: 142px;

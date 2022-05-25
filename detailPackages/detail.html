@@ -38,7 +38,7 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light container mt-3">
-      <a class="navbar-brand" href="#">Your Brand</a>
+      <a class="navbar-brand" href="/" style="color: #ffff;">Your Brand</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -51,20 +51,22 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-        <ul class="navbar-nav pl-3  navbar-detail">
-          <li class="nav-item active">
-            <a class="nav-link mr-4" href="#"
-              >Home <span class="sr-only">(current)</span></a
+        <ul class="nav navbar-nav pl-3" id="pills-tab" role="tablist">
+          <li class="nav-item" id="pills-home-tab" data-toggle="pill"  role="tab" aria-controls="pills-home" aria-selected="true"
+          onclick="window.location.href='/'">
+            <a class="nav-link mr-4" href="index.html"
+            >Home
+           </a
             >
           </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="packages.html">Bali Tour Packages</a>
+          <li class="nav-item mr-4" onclick="window.location.href='../packages.html'">
+            <a class="nav-link" href="../packages.html" id="pills-packages-tab" data-toggle="pill" role="tab" aria-controls="pills-packages" aria-selected="false">Bali Tour Packages</a>
           </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Book Private Car</a>
+          <li class="nav-item mr-4" onclick="window.location.href='../bookPrivateCarPage/index.html'">
+            <a class="nav-link" href="../bookPrivateCarPage/index.html" id="pills-private-tab" data-toggle="pill" role="tab" aria-controls="pills-private" aria-selected="false">Book Private Car</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Information</a>
+          <li class="nav-item" onclick="window.location.href='../informationPage/information.html'">
+            <a class="nav-link" href="../informationPage/information.html" id="pills-information-tab" data-toggle="pill" role="tab" aria-controls="pills-information" aria-selected="false">Information</a>
           </li>
         </ul>
       </div>
@@ -336,10 +338,10 @@
             <img width="454px" height="481px" src="../assets/smile-person.svg" alt="">
           </div>
           <div class="col-md-7">
-            <span class="text-s5-1" style="color: #faa61a;">Our Customers Love Us</sp>
+            <span class="text-s5-1">Our Customers Love Us</sp>
             <p class="text-s5-2">What Have They Said?</p>
             <div class="row">
-              <div class="card border-card-s6">
+              <div class="card border-card-s6 slider slider1 slider-active">
                 <div class="card-body">
                   <div class="img-card-s6">
                     <div class="container container-img-card-s6">
@@ -355,7 +357,34 @@
                     </div>
                   </div>
                   <p class="card-text card-desc-s6 mt-4">We had the pleasure of driving around Bali with Winata. He was an excellent driver and was really patient with us along the way, especially my wife's parents. He was great to talk to as I sat in the front and spoke very good English (perfect really). We liked him so much that we tried to hire him again but he was already booked so we took a few additional drivers over the course of our remaining days in Bali. Everyone was very professional and we would hire again. Thanks so much!</p>
-                  <div class="row justify-content-start ml-1 mt-4">
+                  <div class="row justify-content-start ml-1">
+                  <p>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                    <i class="bi bi-star-fill start-icon"></i>
+                  </p>
+                </div>
+          </div>
+        </div>
+              <div class="card border-card-s6 slider slider-not-active slider2">
+                <div class="card-body">
+                  <div class="img-card-s6">
+                    <div class="container container-img-card-s6">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <img class="img-body-s6" src="https://www.seekpng.com/png/full/76-760594_man-transparent-resolution-smile-man-png.png" alt="">
+                        </div>
+                        <div class="col-md-6 mt-2">
+                          <span class="name-card-s6">Rubi Andro</span>
+                          <span class="place-card-s6">Japan, JPN</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text card-desc-s6 mt-4">We had the Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorumasdasdaads lorem, quis magni nemo et sapiente minus commodi. Dolor, praesentium molestias vero error alias quod? Nesciunt voluptatibus excepturi, voluptatum magnam tempore quam. and we would hire again. Thanks so much!</p>
+                  <div class="row justify-content-start ml-1">
                   <p>
                     <i class="bi bi-star-fill start-icon"></i>
                     <i class="bi bi-star-fill start-icon"></i>
@@ -369,9 +398,9 @@
             </div>
       <div class="row justify-content-end btn-slider">
         <button class="mr-3">
-          <i class="bi bi-chevron-left"></i>
+          <i class="bi bi-chevron-left" onclick="lefts()"></i>
         </button>
-        <button><i class="bi bi-chevron-right"></i></button>
+        <button><i class="bi bi-chevron-right" onclick="rights()"></i></button>
       </div>
         </div>
         </div>
@@ -417,5 +446,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

@@ -15,7 +15,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="bookDetail.css" />
+    <link rel="stylesheet" href="../bookPages/bookDetail.css" />
+    <link rel="stylesheet" href="bookcar1.css" />
     <title>Document</title>
   </head>
 
@@ -25,8 +26,13 @@
         <div class="col on-top">
           <h6 class="text-center mt-3">Your Brand</h6>
           <h5 class="text-center mt-5">Booking Information</h5>
-          <h4 class="text-center mt-3">Private West Nusa Penida Tour Package</h4>
-          <p class="text-center mt-3">Please fill up the blank fields below and our tour consultant will confirm your book</p>
+          <h4 class="text-center mt-3">
+            Private Car Toyota Avanza with Driver
+          </h4>
+          <p class="text-center mt-3">
+            Please fill up the blank fields below and our tour consultant will
+            confirm your book
+          </p>
         </div>
       </div>
     </div>
@@ -38,38 +44,56 @@
             <form>
               <div class="form-group">
                 <label for="fullname">Fullname</label>
-                <input type="text" class="form-control" id="fullname" placeholder="Fullname">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullname"
+                  placeholder="Fullname"
+                />
               </div>
               <div class="form-group">
                 <label for="Email">Email</label>
-                <input type="email" class="form-control" id="Email"  placeholder="Enter email">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email"
+                  placeholder="Enter email"
+                />
               </div>
               <div class="form-group">
                 <label for="Phone">Phone or Whatsapp (with country code)</label>
-                <input type="number" class="form-control" id="Phone" placeholder="+62 123 456 789">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="Phone"
+                  placeholder="+62 123 456 789"
+                />
               </div>
               <div class="form-group">
                 <label for="Date">Tour Date</label>
-                <input type="date" class="form-control" id="Date" placeholder="+62 123 456 789">
-              </div>
-              <div class="form-group">
-                <label for="Participants">Number of Participants <b>(Minimum 2)</b></label>
-                <input type="number" class="form-control" id="Participants" placeholder="1" min="2" >
+                <input type="date" class="form-control" id="Date" />
               </div>
               <div class="form-group">
                 <label for="Hotel">Hotel / Accomodation Name</label>
-                <input type="text" class="form-control" id="Hotel">
+                <input type="text" class="form-control" id="Hotel" />
               </div>
               <div class="form-group">
                 <label for="Note">Note</label>
-                <br>
+                <br />
                 <textarea name="note" id="note" cols="71" rows="10"></textarea>
               </div>
             </form>
             <div class="row justify-content-center">
-              <button onclick="location.href='../bookFinishPage/finishDetail.html'" class="btn-book mt-5">BOOKING NOW</button>
+              <button
+                onclick="location.href='../bookCarFinishPage/bookCarFinish.html'"
+                class="btn-book mt-5"
+              >
+                BOOKING NOW
+              </button>
             </div>
-              <p onclick="window.location.href='/'" class="cancel text-center mt-5">CANCEL</p>
+            <p class="cancel text-center mt-5" onclick="location.href='/'">
+              CANCEL
+            </p>
           </div>
         </div>
       </div>

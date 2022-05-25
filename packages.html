@@ -37,13 +37,17 @@
   </header>
 
   <body>
+    <div class="row top-rows">
+      <h4>Don't wait until tomorrow, discover your tour now</h4>
+      <p class="mt-2">Our tour consultants are much better than any travel agents in helping to tick off your Bali bucket list according to your needs.</p>
+    </div>
     <img
       class="img-first"
       src="https://img.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg?t=st=1653384996~exp=1653385596~hmac=8a8fcfafa90146afaf77db5d3ca21237c0ba6c5af1d86d1f3b4b056588b6729e&w=996"
       alt=""
     />
     <nav class="navbar navbar-expand-lg navbar-light container mt-3">
-      <a class="navbar-brand" href="#" style="color: #ffff">Your Brand</a>
+      <a class="navbar-brand" href="/" style="color: #ffff;">Your Brand</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -56,20 +60,22 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-        <ul class="navbar-nav pl-3">
-          <li class="nav-item active">
-            <a class="nav-link mr-4" href="#"
-              >Home <span class="sr-only">(current)</span></a
+        <ul class="nav navbar-nav pl-3" id="pills-tab" role="tablist">
+          <li class="nav-item" id="pills-home-tab" data-toggle="pill"  role="tab" aria-controls="pills-home" aria-selected="true"
+          onclick="window.location.href='/'">
+            <a class="nav-link  mr-4" href="../index.html"
+            >Home
+           </a
             >
           </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="packages.html">Bali Tour Packages</a>
+          <li class="nav-item mr-4" onclick="window.location.href='packages.html'">
+            <a class="nav-link active" href="packages.html" id="pills-packages-tab" data-toggle="pill" role="tab" aria-controls="pills-packages" aria-selected="false">Bali Tour Packages</a>
           </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Book Private Car</a>
+          <li class="nav-item mr-4" onclick="window.location.href='bookPrivateCarPage/index.html'">
+            <a class="nav-link " href="bookPrivateCarPage/index.html" id="pills-private-tab" data-toggle="pill" role="tab" aria-controls="pills-private" aria-selected="false">Book Private Car</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Information</a>
+          <li class="nav-item" onclick="window.location.href='informationPage/information.html'">
+            <a class="nav-link" href="informationPage/information.html" id="pills-information-tab" data-toggle="pill" role="tab" aria-controls="pills-information" aria-selected="false">Information</a>
           </li>
         </ul>
       </div>
@@ -79,7 +85,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p class="text-s5-1 mt-5">
+            <p class="text-pcg-1 mt-5">
               All Activities are Guided by Our Local Guide
             </p>
             <p class="text-s5-2">Our Best Tour Packages</p>
@@ -313,23 +319,29 @@
       </div>
     </section>
 
+
     <section class="section-7">
-      <p class="text-center text-1-s7">
-        People Who Will Make Your Trip Memorable in Bali
-      </p>
-      <p class="text-center text-2-s7">
-        Meet Our Best Tour Guide & Private Drivers
-      </p>
-      <div class="container">
+      <p class="text-center text-1-s7">People Who Will Make Your Trip Memorable in Bali</p>
+      <p class="text-center text-2-s7">Meet Our Best Tour Guide & Private Drivers</p>
+      <div class="container mt-5">
         <div class="row">
           <div class="col-3 mr-2">
             <div class="card card-s7">
               <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
+                <div>
+                  <img class="ceklist" src="./assets/cek.svg" alt="">
+                  <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
+                </div>
+                  <p class="text-center text-3-s7 mt-3">John Doe 1</p>
+                <p class="text-center text-4-s7">@johndoe1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mr-2">
+            <div class="card card-s7">
+              <div class="card-body card-body-s7">
+                <img class="ceklist" src="./assets/cek.svg" alt="">
+                <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
                 <p class="text-center text-3-s7 mt-3">John Doe 1</p>
                 <p class="text-center text-4-s7">@johndoe1</p>
               </div>
@@ -338,24 +350,8 @@
           <div class="col-3 mr-2">
             <div class="card card-s7">
               <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
-                <p class="text-center text-3-s7 mt-3">John Doe 1</p>
-                <p class="text-center text-4-s7">@johndoe1</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 mr-2">
-            <div class="card card-s7">
-              <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
+                <img class="ceklist" src="./assets/cek.svg" alt="">
+                <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
                 <p class="text-center text-3-s7 mt-3">John Doe 1</p>
                 <p class="text-center text-4-s7">@johndoe1</p>
               </div>
@@ -364,26 +360,21 @@
           <div class="col-2">
             <div class="card card-s7">
               <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
+                <img class="ceklist" src="./assets/cek.svg" alt="">
+                <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
                 <p class="text-center text-3-s7 mt-3">John Doe 1</p>
                 <p class="text-center text-4-s7">@johndoe1</p>
               </div>
             </div>
           </div>
+
         </div>
         <div class="row mt-3">
           <div class="col-3 mr-2">
             <div class="card card-s7">
               <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
+                <img class="ceklist" src="./assets/cek.svg" alt="">
+                <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
                 <p class="text-center text-3-s7 mt-3">John Doe 1</p>
                 <p class="text-center text-4-s7">@johndoe1</p>
               </div>
@@ -392,11 +383,8 @@
           <div class="col-3 mr-2">
             <div class="card card-s7">
               <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
+                <img class="ceklist" src="./assets/cek.svg" alt="">
+                <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
                 <p class="text-center text-3-s7 mt-3">John Doe 1</p>
                 <p class="text-center text-4-s7">@johndoe1</p>
               </div>
@@ -405,11 +393,8 @@
           <div class="col-3 mr-2">
             <div class="card card-s7">
               <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
+                <img class="ceklist" src="./assets/cek.svg" alt="">
+                <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
                 <p class="text-center text-3-s7 mt-3">John Doe 1</p>
                 <p class="text-center text-4-s7">@johndoe1</p>
               </div>
@@ -418,11 +403,8 @@
           <div class="col-2">
             <div class="card card-s7">
               <div class="card-body card-body-s7">
-                <img
-                  class="img-card-s7"
-                  src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028"
-                  alt=""
-                />
+                <img class="ceklist" src="./assets/cek.svg" alt="">
+                <img class="img-card-s7" src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.1228024990.1653216028" alt="">
                 <p class="text-center text-3-s7 mt-3">John Doe 1</p>
                 <p class="text-center text-4-s7">@johndoe1</p>
               </div>
@@ -431,6 +413,7 @@
         </div>
       </div>
     </section>
+
 
 
     <section class="section-8">

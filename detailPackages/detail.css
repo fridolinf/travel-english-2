@@ -5,6 +5,11 @@
   color: #343434 !important;
 }
 
+.navbar > a,
+.collapse > ul > li > a {
+  color: #343434 !important;
+}
+
 .link-detail {
   font-weight: 400;
   font-size: 16px;

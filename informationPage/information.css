@@ -1,0 +1,120 @@
+.actives-information {
+  margin-top: 20px;
+  background-color: #0c145a;
+  width: 10px;
+  height: 10px;
+  margin-top: 35px;
+  margin-left: 50px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.text-head-s1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 1000;
+  top: 200px;
+  left: 632px;
+  text-align: center;
+}
+
+.text-head2-s1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  position: absolute;
+  top: 270px;
+  z-index: 1000;
+  left: 295px;
+  width: 881px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text-information-s1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 1000;
+  top: 96px;
+  left: 632px;
+  text-align: center;
+}
+
+.border-inf {
+  border: 2px solid rgba(243, 243, 243, 0.5);
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.information2-text-1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #0c145a;
+}
+
+.inf-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0c145a;
+}
+
+.border-price-desc {
+  border-bottom: 1px solid #d9d9d9;
+}
+.inf-desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: #343434;
+}
+
+.inf-price {
+  font-weight: 500;
+  font-size: 16px;
+  color: #0c145a;
+}
+
+/* SECTION ACCORDION */
+.card {
+  border: none !important;
+}
+.card-header {
+  border-top: 1px solid rgba(217, 217, 217, 1);
+  background: none;
+}
+.accordion .card-header:after {
+  font-family: "FontAwesome";
+  content: "\f00d";
+  float: right;
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067";
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #343434;
+}
+
+/* SECTION ACCORDION END */
+
+/* SECTION CONTACT US */
+.desc1-text-1 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #b0b0b0;
+}
+
+/* SECTION CONTACT US END */
